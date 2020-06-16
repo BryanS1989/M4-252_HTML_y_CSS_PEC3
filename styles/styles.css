@@ -41,3 +41,68 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+* {
+	box-sizing: border-box;
+	color: rgb(2, 15, 20) ;
+}
+
+html {
+	background-color: rgb(245, 246, 240);
+	font-family: 'Merriweather', serif;
+	font-size: 10px;
+}
+
+/**********/
+/* Header */
+/**********/
+header {
+	font-family: 'Montserrat', sans-serif;
+	padding: 1%;
+	width: 100% vw;
+}
+
+.logo-brand {
+	display: inline-block;
+	font-family: 'Merriweather', serif;
+	font-size: 2.6rem;
+}
+
+figure.logo-brand {
+	height: 4rem;
+	width: 3.4rem;
+	margin-right: 1.6rem;
+}
+
+h1.logo-brand{
+	margin-bottom: 0.6rem;
+}
+
+/* Text Types */
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.no-link {
+	text-decoration: none;
+}
+
+/* Button Type */
+.button {
+	background-color: rgb(255, 80, 50) ;
+	border-radius: 0.5rem;
+	color: white;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 3.6rem;
+	width: 13.3rem;
+	text-align: center;
+}
