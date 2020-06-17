@@ -58,7 +58,9 @@ html {
 /**********/
 header {
 	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 5rem;
 	padding: 1%;
+	text-align: center;
 	width: 100% vw;
 }
 
@@ -74,8 +76,8 @@ figure.logo-brand {
 	margin-right: 1.6rem;
 }
 
-h1.logo-brand{
-	margin-bottom: 0.6rem;
+h1.logo-brand span{
+	margin-bottom: 0rem; /*0.6rem*/
 }
 
 /* Text Types */
@@ -99,10 +101,64 @@ h1.logo-brand{
 .button {
 	background-color: rgb(255, 80, 50) ;
 	border-radius: 0.5rem;
-	color: white;
-	display: inline-block;
-	font-size: 1.3rem;
+	display: block;
+	font-size: 1.5rem;
 	height: 3.6rem;
-	width: 13.3rem;
+	margin: 1.5rem auto;
+	line-height: 3.6rem;
 	text-align: center;
+	width: 13.3rem;
+}
+
+.button > span {
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+/* Button Link */
+.button:link,
+.button:visited,
+.button:focus {
+	color: rgb(255, 255, 255);
+}
+
+.button:hover {
+	background-color: rgb(2, 15, 20) ;
+}
+
+button:active {
+	background-color: rgb(255, 80, 50) ;
+}
+
+/* Links NavBar */
+.nav-bar-link {
+	color: rgb(2, 15, 20);
+	font-size: 1.5rem;
+}
+
+.nav-bar-link:link,
+.nav-bar-link:visited,
+.nav-bar-link:focus {
+	color: rgb(2, 15, 20);
+}
+
+.nav-bar-link:hover {
+	color: rgba(2, 15, 20, 0.5);
+}
+
+.nav-bar-link:active {
+	color: rgb(2, 15, 20);
+}
+
+/* NavBar Página actual */
+.nav-bar-link-actual-page {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* NavBar menú */
+nav li {
+	margin: 1.5rem 0;
 }
