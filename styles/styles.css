@@ -1,3 +1,6 @@
+/*************/
+/* RESET CSS */
+/*************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,13 +56,13 @@ html {
 	font-size: 10px;
 }
 
+
+
 /**********/
 /* Header */
 /**********/
 header {
 	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 5rem;
-	padding: 1%;
 	text-align: center;
 	width: 100% vw;
 }
@@ -73,11 +76,9 @@ header {
 figure.logo-brand {
 	height: 4rem;
 	width: 3.4rem;
-	margin-right: 1.6rem;
 }
 
 h1.logo-brand span{
-	margin-bottom: 0rem; /*0.6rem*/
 }
 
 /* Text Types */
@@ -93,9 +94,139 @@ h1.logo-brand span{
 	text-transform: uppercase;
 }
 
-.no-link {
-	text-decoration: none;
+/* t-center:	Text align center */
+/* t-right:		Text align right  */
+/* t-left:		Text align left   */
+.t-center {
+	text-align: center;
 }
+
+.t-left {
+	text-align: left;
+}
+
+.t-right {
+	text-align: right;
+}
+
+/* Paddings */
+/* ptb:	Padding Top and Bottom */
+/* pt:	Padding Top            */
+/* pb:	Padding Bottom         */
+/* prl:	Padding Right and Left */
+/* pr:	Padding Right          */
+/* pl:	Padding Left           */
+.ptb-1 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.pt-1 {
+	padding-top: 1rem;
+}
+
+.pb-1 {
+	padding-bottom: 1rem;
+}
+
+.prl-1d5{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.pl-1d5{
+	padding-left: 1.5rem;
+}
+
+.pr-1d5{
+	padding-right: 1.5rem;
+}
+
+.prl-2{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.pl-2{
+	padding-left: 2rem;
+}
+
+.pr-2{
+	padding-right: 2rem;
+}
+
+/* Margins */
+/* mtb:	Margin Top and Bottom */
+/* mt:	Margin Top            */
+/* mb:	Margin Bottom         */
+/* mrl:	Margin Right and Left */
+/* mr:	Margin Right          */
+/* ml:	Margin Left           */
+.mtb-0 {
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+.mtb-1d5 {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.mtb-2 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.mtb-3 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.mtb-5 {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.mb-0 {
+	margin-bottom: 0rem;
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}
+
+.mb-5 {
+	margin-bottom: 5rem;
+}
+
+.mrl-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mrl-0 {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.mrl-1d5 {
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
+
+.mrl-2 {
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+.mr-1d5{
+	margin-right: 1.6rem;
+}
+
 
 /* Button Type */
 .button {
@@ -104,7 +235,6 @@ h1.logo-brand span{
 	display: block;
 	font-size: 1.5rem;
 	height: 3.6rem;
-	margin: 1.5rem auto;
 	line-height: 3.6rem;
 	text-align: center;
 	width: 13.3rem;
@@ -115,6 +245,30 @@ h1.logo-brand span{
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
+}
+
+/* Links */
+.no-link {
+	text-decoration: none;
+}
+
+/* Text Links */
+.text-link {
+	color: rgb(255, 80, 50) ;
+}
+
+.text-link:link,
+.text-link:visited,
+.text-link:focus {
+	color: rgb(255, 80, 50) ;
+}
+
+.text-link:hover {
+	color: rgba(255, 80, 50, 0.5) ;
+}
+
+.text-link:active {
+	color: rgb(255, 80, 50) ;
 }
 
 /* Button Link */
@@ -159,6 +313,56 @@ button:active {
 }
 
 /* NavBar menú */
+nav ul {
+}
+
 nav li {
-	margin: 1.5rem 0;
+}
+
+/* Index.hmtl Icons */
+.icon {
+	width: 16.3rem;
+}
+
+figure + p {
+	display: inline-block;
+	width: 18rem;
+}
+
+/* Article */
+article {
+}
+
+article footer {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5rem;
+	width: 90%;
+}
+
+/* Sections */
+section h1 {
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+
+section p {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+section#how div {
+}
+
+section#join p {
+	font-size: 2.4rem;
+	line-height: 3.5rem;
+}
+
+/* Form */
+form input {
+	display: block;
+	font-size: 2rem;
+	height: 5.5rem;
+	width: 90%;
 }
