@@ -232,6 +232,11 @@ header img{
 	padding-right: 2rem;
 }
 
+.prl-3{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
 .pl-1d5{
 	padding-left: 1.5rem;
 }
@@ -356,6 +361,11 @@ main {
 	}	
 }
 
+h1 {
+	font-size: 2.7rem;
+	font-weight: bold;
+}
+
 /* Button Type */
 .button {
 	background-color: rgb(255, 80, 50) ;
@@ -469,19 +479,20 @@ button:active {
 	color: rgb(255, 255, 255) ;
 }
 
-/* Index.hmtl Icons */
+/**********/
+/* IMAGES */
+/**********/
 .icon {
 	width: 16.3rem;
+}
+
+.club-img {
+	width: 100%;
 }
 
 /************/
 /* SECTIONS */
 /************/
-section h1 {
-	font-size: 2.8rem;
-	font-weight: bold;
-}
-
 section p {
 	font-size: 1.6rem;
 	line-height: 2.5rem;
@@ -514,6 +525,29 @@ section h2 {
 	line-height: 3.5rem;
 }
 
+article#clubes {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+article#clubes > h1 {
+	width: 100%;
+}
+
+section[id^='club'] {
+	flex: 1 33%;
+}
+
+section[id^='club'] h2::before {
+	content: '-';
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+section[id^='club'] a {
+	font-size: 1.5rem;
+}
+
 #section-form {
 	display: inline-block;
 	flex: 1;
@@ -534,7 +568,7 @@ figure + p {
 
 @media screen and (min-width: 426px) {
 
-	section p {
+	section#what p {
 		width: 75%;
 		margin: 0 auto;
 	}
@@ -566,6 +600,14 @@ figure + p {
 
 	section#join h1{
 		width: 100%;
+	}
+
+	article#clubes {
+		flex-flow: row wrap;
+	}
+
+	section[id^="club"]{
+		padding: 0 2rem;
 	}
 
 }
