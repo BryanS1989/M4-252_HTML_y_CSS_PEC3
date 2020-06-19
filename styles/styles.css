@@ -47,7 +47,6 @@ table {
 
 * {
 	box-sizing: border-box;
-	color: rgb(2, 15, 20) ;
 }
 
 html {
@@ -62,23 +61,73 @@ html {
 /* Header */
 /**********/
 header {
+	color: rgb(2, 15, 20) ;
+	display: flex;
+	flex-flow: column wrap;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	width: 100% vw;
 }
 
+#login {
+	flex: 1;
+}
+
+#brand {
+	flex: 1;
+}
+
+header nav {
+	flex: 1;
+}
+
+header nav ul {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+header nav li {
+	flex: 1;
+}
+
+/**********************/
+/*  HEADER MEDIAQUERY */
+/**********************/
+@media screen and (min-width: 426px) {
+
+	header {
+		flex-flow: row wrap;
+	}
+
+	header div:first-child {
+		order: 3;
+	}
+	
+	#brand {
+	}
+
+	header nav ul {
+		flex-flow: row wrap;
+	}
+
+}
+
 .logo-brand {
 	display: inline-block;
 	font-family: 'Merriweather', serif;
-	font-size: 2.6rem;
+	font-size: 3rem;
 }
 
 figure.logo-brand {
+	position: relative;
 	height: 4rem;
 	width: 3.4rem;
 }
 
-h1.logo-brand span{
+header img{
+	position: absolute;
+	left: -1rem;
+	bottom: -1rem;
 }
 
 /* Text Types */
@@ -110,23 +159,58 @@ h1.logo-brand span{
 }
 
 /* Paddings */
+/* p:	All Paddings           */
 /* ptb:	Padding Top and Bottom */
 /* pt:	Padding Top            */
 /* pb:	Padding Bottom         */
 /* prl:	Padding Right and Left */
 /* pr:	Padding Right          */
 /* pl:	Padding Left           */
+.p-2 {
+	padding: 2rem;
+}
+
+.p-3 {
+	padding: 3rem;
+}
+
 .ptb-1 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+.ptb-3 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.ptb-5 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 .pt-1 {
 	padding-top: 1rem;
 }
 
+.pt-3 {
+	padding-top: 3rem;
+}
+
+.pt-5 {
+	padding-top: 5rem;
+}
+
 .pb-1 {
 	padding-bottom: 1rem;
+}
+
+.pb-3 {
+	padding-bottom: 3rem;
+}
+
+.pb-5 {
+	padding-bottom: 5rem;
 }
 
 .prl-1d5{
@@ -156,15 +240,25 @@ h1.logo-brand span{
 }
 
 /* Margins */
+/* m:	All Margins           */
 /* mtb:	Margin Top and Bottom */
 /* mt:	Margin Top            */
 /* mb:	Margin Bottom         */
 /* mrl:	Margin Right and Left */
 /* mr:	Margin Right          */
 /* ml:	Margin Left           */
+.m-3 {
+	margin: 3rem;
+}
+
 .mtb-0 {
 	margin-top: 0rem;
 	margin-bottom: 0rem;
+}
+
+.mtb-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .mtb-1d5 {
@@ -185,6 +279,18 @@ h1.logo-brand span{
 .mtb-5 {
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+}
+
+.mt-3 {
+	margin-top: 3rem;
+}
+
+.mt-5 {
+	margin-top: 5rem;
+}
+
+.mt-7 {
+	margin-top: 7rem;
 }
 
 .mb-0 {
@@ -227,6 +333,10 @@ h1.logo-brand span{
 	margin-right: 1.6rem;
 }
 
+/* Main */
+main {
+	color: rgb(2, 15, 20) ;
+}
 
 /* Button Type */
 .button {
@@ -250,6 +360,16 @@ h1.logo-brand span{
 /* Links */
 .no-link {
 	text-decoration: none;
+}
+
+/* Link Logo and Brand */
+.logo-brand-link,
+.logo-brand-link:link,
+.logo-brand-link:visited,
+.logo-brand-link:focus,
+.logo-brand-link:hover,
+.logo-brand-link:active {
+	color: rgb(2, 15, 20) ;
 }
 
 /* Text Links */
@@ -312,11 +432,23 @@ button:active {
 	font-style: italic;
 }
 
-/* NavBar menú */
-nav ul {
+/* Footer link */
+.footer-link {
+	color: rgb(255, 255, 255) ;
 }
 
-nav li {
+.footer-link:link,
+.footer-link:visited,
+.footer-link:focus {
+	color: rgb(255, 255, 255) ;
+}
+
+.footer-link:hover {
+	color: rgb(255, 80, 50) ;
+}
+
+.footer-link:active {
+	color: rgb(255, 255, 255) ;
 }
 
 /* Index.hmtl Icons */
@@ -365,4 +497,102 @@ form input {
 	font-size: 2rem;
 	height: 5.5rem;
 	width: 90%;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+main + footer {
+	background-color: rgb(67, 58, 68) ;
+	color: rgb(255, 255, 255) ;
+	display: flex;
+	flex-flow: column wrap;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+#otros {
+	display: flex;
+	flex: 1;
+	flex-flow: column wrap;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+#social {
+	display: flex;
+	flex: 1;
+	flex-flow: column wrap;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+#copyright {
+	flex: 1 100%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#copyright p {
+	flex: 1;
+}
+
+footer li {
+	flex: 1;
+}
+
+footer div p {
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+
+#scroll-up {
+	font-size: 2.5rem;
+	position: absolute;
+	right: 0em;
+	bottom: 0em;
+}
+
+@media screen and (min-width: 426px) {
+	main + footer {
+		flex-flow: row wrap;
+	}
+
+	#otros {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	#social {
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	footer li {
+		max-width: 10rem;
+		position: relative;
+	}
+
+	footer li::after {
+		content: "·";
+		position: absolute;
+		left: 100%;
+	}
+
+	#otros li:first-child {
+		max-width: 13rem;
+	}
+
+	#otros li:last-child {
+		max-width: 20rem;
+	}
+
+	footer li:last-child::after {
+		content: "";
+	}
+
+	#copyright{
+		align-items: flex-start;
+		margin-left: 2rem;
+	}
 }

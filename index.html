@@ -14,24 +14,34 @@
 </head>
 
 <body>
-    <header class="pt-1 pb-1 mb-5">
+    <header class="pt-1 pb-1 mb-5" id="top">
+        
+        <div id="login">
+            <a href="#" class="button no-link mtb-1d5 mrl-auto">
+                <span>Iniciar sesión</span>
+            </a>
+        </div>
 
-        <a href="#" class="button no-link mtb-1d5 mrl-auto"><span>Iniciar sesión</span></a>
-
-        <a href="./index.html" class="no-link">
-            <figure class="logo-brand mr-1d5">
-                <img src="img/clublector-isologo.png" alt="ClubLector">
-            </figure>
-            <h1 class="logo-brand"><span class="bold mb-0">club</span><span class="italic">lector</span></h1>
-        </a>
+        <div id="brand">
+            <a href="./index.html" class="no-link logo-brand-link">
+                <figure class="logo-brand">
+                    <img src="img/clublector-isologo.png" class="mr-1d5" alt="ClubLector">
+                </figure>
+                <h1 class="logo-brand"><span class="bold pb-3">
+                    club</span><span class="italic">lector</span>
+                </h1>
+            </a>
+        </div>
 
         <nav>
-            <ul class="mtb-3 mrl-0">
-                <li class="mtb-1d5 mrl-0">
-                    <a href="./clubes-tematicos.html" class="uppercase no-link nav-bar-link">Clubes temáticos</a>
+            <ul class="mtb-2 mrl-0">
+                <li class="mtb-1 mrl-0">
+                    <a href="./clubes-tematicos.html" 
+                    class="uppercase no-link nav-bar-link">Clubes temáticos</a>
                 </li>
-                <li class="mtb-1d5 mrl-0">
-                    <a href="./lecturas-2020.html" class="uppercase no-link nav-bar-link">Lecturas 2020</a>
+                <li class="mtb-1 mrl-0">
+                    <a href="./lecturas-2020.html" 
+                    class="uppercase no-link nav-bar-link">Lecturas 2020</a>
                 </li>
             </ul>
         </nav>
@@ -126,7 +136,8 @@
                     como acceder, rectificar, suprimir sus datos y otros 
                     derechos dirigiéndose a clublector&#64;clublector.org. 
                     <span class="bold">Información Adicional</span>: Puede ampliar la información en el 
-                    enlace de <a href="#" class="text-link no-link">Aviso Legal</a> y <a href="#" class="text-link no-link">Política de privacidad</a>.
+                    enlace de <a href="#" class="text-link no-link">Aviso Legal</a> y 
+                    <a href="#" class="text-link no-link">Política de privacidad</a>.
                 </p>
 
                 <label for="policy">
@@ -143,8 +154,38 @@
 
     </main>
 
-    <footer>
-        
+    <footer class="t-center mt-7">
+        <ul id="otros" class="pt-5 mb-5">
+            <li>
+                <a href="#" class="no-link footer-link">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="#" class="no-link footer-link">Aviso legal</a>
+            </li>
+            <li>
+                <a href="#" class="no-link footer-link">Política de privacidad</a>
+            </li>
+        </ul>
+
+        <ul  id="social" class="mt-5 mb-5">
+            <li>
+                <a href="#" class="no-link footer-link">Facebook</a>
+            </li>
+            <li>
+                <a href="#" class="no-link footer-link">Twitter</a>
+            </li>
+            <li>
+                <a href="#" class="no-link footer-link">Youtube</a>
+            </li>
+        </ul>
+
+        <div id="copyright" class="pb-3">
+            <p>&#64; 2020 Bryan Steven Agray Londoño</p>
+            <p>Iconos <a href="https://www.flaticon.com" class="no-link footer-link">flaticon.com</a></p>
+            <p>Imágenes <a href="https://unsplash.com" class="no-link footer-link">unsplash.com</a></p>
+        </div>
+
+        <p id="scroll-up" class="t-right p-2"><a href="#top" class="no-link footer-link">&xwedge;</a></p>
     </footer>
 </body>
 
