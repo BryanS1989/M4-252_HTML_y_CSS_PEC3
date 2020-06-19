@@ -97,58 +97,56 @@
                 </div>
             </section>
 
-        </article>
-
-        <article class="t-center mtb-5 mrl-0">
-
             <section id="join">
-                <h1 class="mtb-5 mrl-0">Únete al club</h1>
+                <h1 class="mt-5 mb-3 mrl-0">Únete al club</h1>
+
+                <hgroup>                
+                    <h2 class="t-left prl-1d5">Estamos leyendo tu próximo libro favorito.</h2>
+                    <h2 class="t-left prl-1d5">¿Te lo perderás?</h2>
+                </hgroup>
                 
-                <p class="t-left prl-1d5">Estamos leyendo tu próximo libro favorito.</p>
-                <p class="t-left prl-1d5">¿Te lo perderás?</p>
-                
-                <form id="registerForm" action="">
+                <div id="section-form" class="t-left prl-2">
+                    <form id="registerForm" action="">
                     
-                    <input type="text" name="nombre" id="name"
-                    class="mtb-1d5 mrl-auto prl-2" required
-                    placeholder="Nombre" pattern="[A-Za-z]{1,30}">
+                        <input type="text" name="nombre" id="name"
+                        class="mtb-1d5 pl-2" required
+                        placeholder="Nombre" pattern="[A-Za-z]{1,30}">
+    
+                        <input type="mail" name="email" id="mail"
+                        class="mtb-1d5 pl-2" required
+                        placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    
+                        <input type="password" name="password" id="pwd"
+                        class="mtb-1d5 pl-2" required
+                        placeholder="Contraseña" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    
+                    </form>
 
-                    <input type="mail" name="email" id="mail"
-                    class="mtb-1d5 mrl-auto prl-2" required
-                    placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-
-                    <input type="password" name="password" id="pwd"
-                    class="mtb-1d5 mrl-auto prl-2" required
-                    placeholder="Contraseña" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}">
-
-                </form>
-
+                    <p class="mb-2">
+                        INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span class="bold">Club Lector</span>. 
+                        <span class="bold">Finalidades</span>: recogida de datos para la inscripción como 
+                        socio del interesado. <span class="bold">Legitimación</span>: Consentimiento del 
+                        interesado. <span class="bold">Destinatarios</span>: No están previstas cesiones 
+                        de datos a terceros, excepto obligación legal. <span class="bold">Derechos</span>: 
+                        Puede retirar su consentimineto en cualquier momento, así 
+                        como acceder, rectificar, suprimir sus datos y otros 
+                        derechos dirigiéndose a clublector&#64;clublector.org. 
+                        <span class="bold">Información Adicional</span>: Puede ampliar la información en el 
+                        enlace de <a href="#" class="text-link no-link">Aviso Legal</a> y 
+                        <a href="#" class="text-link no-link">Política de privacidad</a>.
+                    </p>
+    
+                    <label for="policy">
+                        <input type="checkbox" name="acceptPolicy" id="policy" 
+                        class="mb-3" required
+                        form="registerForm">
+    
+                        He leído y acepto la política de privacidad
+                    </label>
+    
+                    <a href="#" class="button no-link uppercase t-left">Regístrame</a>
+                </div>
             </section>
-
-            <footer class="t-left">
-                <p class="mrl-auto mb-2">
-                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span class="bold">Club Lector</span>. 
-                    <span class="bold">Finalidades</span>: recogida de datos para la inscripción como 
-                    socio del interesado. <span class="bold">Legitimación</span>: Consentimiento del 
-                    interesado. <span class="bold">Destinatarios</span>: No están previstas cesiones 
-                    de datos a terceros, excepto obligación legal. <span class="bold">Derechos</span>: 
-                    Puede retirar su consentimineto en cualquier momento, así 
-                    como acceder, rectificar, suprimir sus datos y otros 
-                    derechos dirigiéndose a clublector&#64;clublector.org. 
-                    <span class="bold">Información Adicional</span>: Puede ampliar la información en el 
-                    enlace de <a href="#" class="text-link no-link">Aviso Legal</a> y 
-                    <a href="#" class="text-link no-link">Política de privacidad</a>.
-                </p>
-
-                <label for="policy">
-                    <input type="checkbox" name="acceptPolicy" id="policy" 
-                    class="mb-3" required
-                    form="registerForm">
-
-                    He leído y acepto la política de privacidad</label>
-
-                <a href="#" class="button no-link uppercase t-left">Regístrame</a>
-            </footer>
 
         </article>
 
