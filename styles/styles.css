@@ -97,13 +97,22 @@ header nav li {
 
 	header {
 		flex-flow: row wrap;
+		justify-content: flex-start;
 	}
 
 	header div:first-child {
+		max-width: 20rem;
 		order: 3;
 	}
 	
 	#brand {
+		max-width: 20rem;
+		margin-left: 2rem;
+	}
+
+	header nav {
+		max-width: 40rem;
+		margin: 0 auto;
 	}
 
 	header nav ul {
@@ -561,6 +570,7 @@ footer div p {
 	#otros {
 		flex-flow: row wrap;
 		justify-content: flex-start;
+		margin-left: 2rem;
 	}
 
 	#social {
