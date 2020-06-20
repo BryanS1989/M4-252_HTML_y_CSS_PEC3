@@ -353,6 +353,59 @@ main {
 	color: rgb(2, 15, 20) ;
 }
 
+ol {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+ol li {
+	flex: 1;
+	font-size: 1.5rem;
+	max-width: 13rem;
+}
+
+ol li:first-child {
+	max-width: 5rem;
+}
+
+ol li::before {
+	content: "/";
+	padding-right: 0.5rem;
+}
+
+ol li:first-child::before {
+	content: "";
+}
+
+ol li:last-child {
+	opacity: 0.5;
+}
+
+dl {
+	font-size: 1.5rem;
+}
+
+dt {
+	font-weight: bold;
+	border-bottom: 1px solid rgb(2, 15, 20);
+	margin: 1rem 0;
+}
+
+dl dl dt,
+dl dl dd{
+	border: none;
+	display: inline-block;
+	margin: 0.3rem 0;
+}
+
+blockquote {
+	background-color: rgb(204, 204, 204);
+	border-left: 0.3rem solid rgb(67, 58, 68);
+	border-right: 0.3rem solid rgb(67, 58, 68);
+	padding: 2rem 0rem;
+}
+
 /******/
 /* HR */
 /******/
@@ -368,6 +421,10 @@ hr {
 	
 	hr {
 		display: block;
+	}
+
+	ol {
+		justify-content: left;
 	}
 }
 
@@ -507,6 +564,37 @@ nav {
 	width: 100%;
 }
 
+.circle {
+	border-radius: 100%;
+	background-image: url("../img/detalle-lectura/aldous-huxley.jpg");
+	float: left;
+	height: 20rem;
+	margin-right: 0.5rem;
+	shape-outside: circle();
+	width: 20rem;
+}
+
+.cleared {
+	clear: right;
+}
+
+figure#youtube{
+	height: 100%;
+	padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+iframe {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
 /************/
 /* SECTIONS */
 /************/
@@ -557,6 +645,15 @@ article#clubes > h1 {
 	width: 100%;
 }
 
+article#content {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+article#content h1{
+	flex: 1 100%;
+}
+
 section[id^='club'] {
 	flex: 1 33%;
 }
@@ -601,9 +698,17 @@ section[id^='books'] img {
 	width: 25rem;
 }
 
+section[id^='books'] img:hover {
+	opacity: 0.5;
+}
+
 section[id='lecturas-books'] {
 	display: flex;
 	flex-flow: column wrap;
+}
+
+section[id='author'] {
+	position: relative;
 }
 
 figcaption {
@@ -613,12 +718,27 @@ figcaption {
 	text-align: left;
 }
 
+#youtube + figcaption {
+	font-size: 1.4rem;
+	height: auto;
+	padding: 0rem;
+	text-transform: uppercase;
+}
+
 aside {
 	flex: 1;
 }
 
 section[id^='list-'] {
 	flex: 3;
+}
+
+section[id='sheet'] {
+	flex: 1;
+}
+
+section[id='info'] {
+	flex: 2;
 }
 
 @media screen and (min-width: 426px) {
@@ -639,6 +759,10 @@ section[id^='list-'] {
 
 	section[id^='books'] figure {
 		max-width: 25rem;
+	}
+
+	article#content {
+		flex-flow: row wrap;
 	}
 }
 
