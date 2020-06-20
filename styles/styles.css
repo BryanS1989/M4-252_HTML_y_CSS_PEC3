@@ -64,7 +64,6 @@ header {
 	color: rgb(2, 15, 20) ;
 	display: flex;
 	flex-flow: column wrap;
-	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	width: 100% vw;
 }
@@ -354,11 +353,22 @@ main {
 	color: rgb(2, 15, 20) ;
 }
 
+/******/
+/* HR */
+/******/
+hr {
+	display: none;
+}
+
 @media screen and (min-width: 426px) {
 	main {
-		width: 70%;
+		width: 75%;
 		margin: 0 auto;
-	}	
+	}
+	
+	hr {
+		display: block;
+	}
 }
 
 h1 {
@@ -432,6 +442,13 @@ h1 {
 
 button:active {
 	background-color: rgb(255, 80, 50) ;
+}
+
+/**********/
+/* NAVBAR */
+/**********/
+nav {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Links NavBar */
@@ -525,6 +542,12 @@ section h2 {
 	line-height: 3.5rem;
 }
 
+section h3 {
+	flex: 1 100%; 
+	font-size: 2.2rem;
+	line-height: 3.5rem;
+}
+
 article#clubes {
 	display: flex;
 	flex-flow: column wrap;
@@ -541,11 +564,86 @@ section[id^='club'] {
 section[id^='club'] h2::before {
 	content: '-';
 	font-weight: bold;
+	font-size: 4rem;
+	margin-right: 1rem;
+}
+
+section[id^='books'] h3::before {
+	content: '-';
+	font-weight: bold;
+	font-size: 4rem;
 	margin-right: 1rem;
 }
 
 section[id^='club'] a {
 	font-size: 1.5rem;
+}
+
+section[id^='books'] {
+	display: flex;
+	flex-flow: column wrap;	
+}
+
+section[id^='books'] a {
+	font-size: 1.5rem;
+}
+
+section[id^='books'] figure {
+	box-shadow: 0rem 0rem 1rem 0.5rem gray;
+	display: inline-block;
+	flex: 1;
+	margin: 1rem auto;
+	width: min-content;
+}
+
+section[id^='books'] img {
+	height: 37.7rem;
+	width: 25rem;
+}
+
+section[id='lecturas-books'] {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+figcaption {
+	height: 7.7rem;
+	line-height: 2rem;
+	padding: 3rem 0.5rem 0.5rem 0.5rem;
+	text-align: left;
+}
+
+aside {
+	flex: 1;
+}
+
+section[id^='list-'] {
+	flex: 3;
+}
+
+@media screen and (min-width: 426px) {
+	section[id='lecturas-books'] {
+		flex-flow: row wrap;
+		padding: 1rem 0rem;
+	}
+
+	section[id$='-intro'] {
+		padding: 0 10%;
+	}
+
+	section[id^='books'] {
+		flex-flow: row wrap;	
+		justify-content: space-around;
+		margin: 5rem auto;
+	}
+
+	section[id^='books'] figure {
+		max-width: 25rem;
+	}
+}
+
+cite {
+	font-style: italic;
 }
 
 #section-form {
@@ -563,7 +661,6 @@ div#section-form p {
 
 figure + p {
 	display: inline-block;
-	width: 50%;
 }
 
 @media screen and (min-width: 426px) {
