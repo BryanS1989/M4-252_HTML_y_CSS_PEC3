@@ -118,7 +118,7 @@
     
                         <input type="password" name="password" id="pwd"
                         class="mtb-1d5 pl-2" required
-                        placeholder="Contraseña" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        placeholder="Contraseña" pattern="[A-Za-z0-9]{1,8}">
     
                     </form>
 
@@ -144,7 +144,8 @@
                         He leído y acepto la política de privacidad
                     </label>
     
-                    <a href="#" class="button no-link uppercase t-left">Regístrame</a>
+                    <button type="submit" form="registerForm"
+                    class="button no-link uppercase"><span>Regístrame</span></a>
                 </div>
             </section>
 

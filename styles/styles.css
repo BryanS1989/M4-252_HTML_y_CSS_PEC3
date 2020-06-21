@@ -436,6 +436,7 @@ h1 {
 /* Button Type */
 .button {
 	background-color: rgb(255, 80, 50) ;
+	border: none;
 	border-radius: 0.5rem;
 	display: block;
 	font-size: 1.5rem;
